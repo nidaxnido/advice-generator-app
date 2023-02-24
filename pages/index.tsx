@@ -35,11 +35,11 @@ export default function Home() {
       <main className={manrope.className}>
         <Flex flexFlow="column nowrap" justifyContent="center" alignItems="center" w="100vw" h="100vh" bg="brand.darkBlue">
           <VStack w="90%" maxW="500px" h="fit-content"  borderRadius="15px" bg="brand.darkGreyBlue" 
-          p={{base:"30px", sm:"50px"}} pb={0} spacing="40px">
+          p={{base:"30px", sm:"50px"}} pb={{base:0, sm:0}} spacing="40px">
             <Text color="brand.neonGreen">ADVICE #{id}</Text>
             <Text textAlign='center' fontSize="28px" color="brand.lightCyan">"{advice}"</Text>
             <Image src="/images/pattern-divider-desktop.svg" />
-            <Circle as="button" bg="brand.neonGreen" size="60px" onClick={()=>roll()} mb="-30px"
+            <Circle as="button" bg="brand.neonGreen" size="60px" onClick={()=>roll()} mb="-30px !important"
             _hover={{boxShadow:"0 0 30px 0 hsl(193, 38%, 86%)"}}
             >
                 <Image src="/images/icon-dice.svg"  />  
